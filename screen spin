@@ -1,1 +1,1 @@
-javascript:(function(){document.documentElement.style.transitionDuration=" 60m";document.documentElement.style.transitionTimingFunction="ease-in";document.documentElement.style.transform="rotate(360000deg)";}());
+javascript:(function(){document.documentElement.style.transitionDuration=" 100s";document.documentElement.style.transitionTimingFunction="ease-in";document.documentElement.style.transform="rotate(360000deg)";}());

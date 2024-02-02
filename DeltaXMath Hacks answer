@@ -1,0 +1,50 @@
+function DetectAnswer() {
+    let loadingScreen=document.getElementById("loading-screen");
+
+    if (loadingScreen) {
+        setTimeout(waitAndScrape, 500);
+    }
+
+    else {
+        let strings=document.getElementsByTagName("body")[0].innerText .split("\n") .filter((s)=> s.trim() !=="");
+
+        alert("Found Question. Beware AnsDelta Has trouble With fractions.");
+        console.log(strings);
+
+        let filteredStrings=strings.slice(21, 23);
+        let combinedString=filteredStrings.join(" ");
+
+        alert(combinedString);
+        console.log(combinedString);
+
+        ReEnterQuestion(combinedString);
+    }
+}
+
+DetectAnswer();
+
+function ReEnterQuestion(equation) {
+  let text;
+
+  if (confirm("Would you like to Edit this Equation?")) {
+    text1 = prompt("Insert Edited Equation:", equation);
+    alert("Answer: 0");
+
+    var url = `https://www.tiger-algebra.com/en/solution/${text1}`;
+    var newWindow = window.open(url);
+
+    var intervalId = setInterval(function() {
+      if (newWindow && newWindow.document.readyState === 'complete') {
+        clearInterval(intervalId);
+
+        let content = newWindow.document.getElementsByTagName('html')[0].innerHTML;
+        console.log(content);
+      }
+    }, 1000);
+
+  } else {
+    alert("Answer: 0");
+  }
+
+  return text;
+}

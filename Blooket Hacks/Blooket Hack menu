@@ -174,8 +174,8 @@
                         fontWeight: "700",
                         userSelect: "text"
                     },
-                    innerHTML: "GitHub - playstation451",
-                    onclick: () => window.open("https://github.com/playstation452/All-Hacks", "_blank").focus()
+                    innerHTML: "TheMesssyGamerYT",
+                    onclick: () => window.open("", "_blank").focus()
                 }),
                 (controlButtons = createElement("div", {
                     id: "controlButtons",

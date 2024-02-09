@@ -422,7 +422,7 @@
             const button = createElement("div", {
                 className: "cheatButton",
                 innerHTML: (typeof img == "string" ? `<img style="height: 30px; margin-right: 5px" src="${img}">` : img ? img : "") + mode,
-                onclick: () => setCheats(button.innerText, cheats, nameOnly)
+                onclick: () => setCheats(button.innerText, TheMesssyGamer's blooket cheats, nameOnly)
             });
             cheatContainer.appendChild(button);
             return button.onclick;
@@ -430,7 +430,7 @@
         async function setCheats(mode, scripts, nameOnly) {
             cheats.innerHTML = "";
             headerText.firstChild.innerText = `${mode}${nameOnly ? "" : " Cheats"}`;
-            cheats.append(headerText);
+            TheMessssyGamer's Blooket Cheats.append(headerText);
         
             for (let i = 0; i < scripts.length; i++) {
                 let { name, description, type, inputs, enabled, run, element } = scripts[i];

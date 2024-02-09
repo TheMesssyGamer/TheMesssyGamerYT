@@ -110,7 +110,7 @@
                     createElement("div", {
                         id: "backgroundImage",
                         style: {
-                            backgroundImage: "url(https://https://cdn.kittl.com/pr:sharp/rs:fit:710:710:0/plain/api/users/cls2ojmj11ecl181zrhtgijik/shares/clsewncnp2jym1zwa0lp301gm.png@png)",
+                            backgroundImage: "url(https://cdn.kittl.com/pr:sharp/rs:fit:710:710:0/plain/api/users/cls2ojmj11ecl181zrhtgijik/shares/clsewncnp2jym1zwa0lp301gm.png@png)",
                             display: "block",
                             height: "200%",
                             position: "absolute",

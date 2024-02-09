@@ -110,7 +110,7 @@
                     createElement("div", {
                         id: "backgroundImage",
                         style: {
-                            backgroundImage: "url(https://cdn.kittl.com/pr:sharp/rs:fit:710:710:0/plain/api/users/cls2ojmj11ecl181zrhtgijik/shares/clsewncnp2jym1zwa0lp301gm.png@png)",
+                            backgroundImage: "url(https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png)",
                             display: "block",
                             height: "200%",
                             position: "absolute",
@@ -191,7 +191,7 @@
                         height: "55px",
                         width: "165px",
                         background: "#none",
-                        borderLeft: "3px solid red",
+                        borderLeft: "3px solid black",
                         borderTop: "3px solid black",
                         borderTopLeftRadius: "10px",
                         color: "white",
@@ -208,7 +208,7 @@
                             width: "55px",
                             fontFamily: "Nunito",
                             color: "white",
-                            backgroundColor: "#red",
+                            backgroundColor: "#00a0ff",
                             border: "none",
                             fontSize: "2rem",
                             cursor: "move"
@@ -422,15 +422,15 @@
             const button = createElement("div", {
                 className: "cheatButton",
                 innerHTML: (typeof img == "string" ? `<img style="height: 30px; margin-right: 5px" src="${img}">` : img ? img : "") + mode,
-                onclick: () => setCheats(button.innerText,cheats, nameOnly)
+                onclick: () => setCheats(button.innerText, cheats, nameOnly)
             });
             cheatContainer.appendChild(button);
             return button.onclick;
         }
         async function setCheats(mode, scripts, nameOnly) {
             cheats.innerHTML = "";
-            headerText.firstChild.innerText = `${mode}${nameOnly ? "" : "TheMesssyGamers Cheats"}`;
-             Cheats.append(headerText);
+            headerText.firstChild.innerText = `${mode}${nameOnly ? "" : " Cheats"}`;
+            cheats.append(headerText);
         
             for (let i = 0; i < scripts.length; i++) {
                 let { name, description, type, inputs, enabled, run, element } = scripts[i];
@@ -3863,7 +3863,7 @@
         }
     });
     let img = new Image;
-    img.src = "https://raw.githubusercontent.com/05Konz/Blooket-Cheats/main/autoupdate/timestamps/gui.png?" + Date.now();
+    img.src = "https://cdn.kittl.com/pr:sharp/rs:fit:710:710:0/plain/api/users/cls2ojmj11ecl181zrhtgijik/shares/clsewncnp2jym1zwa0lp301gm.png@png();
     img.crossOrigin = "Anonymous";
     img.onload = function() {
         const c = document.createElement("canvas");
